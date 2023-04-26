@@ -43,13 +43,12 @@ export default {
         }
     }
 }
-
 </script>
 
 <template>
     <header class="d-flex justify-content-between align-items-center p-5">
         <div class="logo">
-            <img src="../assets/images/gym_logo_1x.png" alt="Header Logo">
+            <img src="../src/assets/images/gym_logo_1x.png" alt="Header Logo">
         </div>
         <nav>
             <ul class="nav-links text-white d-flex gap-5">
@@ -63,9 +62,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../style/general.scss";
-@use "../style/partials/variables" as *;
-@use "../style/partials/mixins" as *;
+@use "../src/style/general.scss";
+@use "../src/style/partials/variables" as *;
+@use "../src/style/partials/mixins" as *;
 
 header {
     width: 100%;

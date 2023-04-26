@@ -9,7 +9,7 @@
 </template>
 
 <style scoped lang="scss">
-@use "../style/general.scss";
-@use "../style/partials/variables" as *;
-@use "../style/partials/mixins" as *;
+@use "../src/style/general.scss";
+@use "../src/style/partials/variables" as *;
+@use "../src/style/partials/mixins" as *;
 </style>

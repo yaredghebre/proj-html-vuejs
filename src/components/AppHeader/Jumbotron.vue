@@ -15,14 +15,14 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../style/general.scss";
-@use "../style/partials/variables" as *;
+@use "../src/style/general.scss";
+@use "../src/style/partials/variables" as *;
 
 .jumbo-container {
-    background-image: url(../assets/images/home-banner.jpg);
+    background-image: url(../src/assets/images/home-banner.jpg);
     height: 1000px;
     position: relative;
-    top: -50px;
+    top: 0;
     
         h1 {
             font-weight: 700;
