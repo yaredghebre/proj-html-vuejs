@@ -25,6 +25,7 @@ export default {
 
 <template>
     <Intro />
+    <Membership />
 </template>
 
 <style scoped lang="scss">
