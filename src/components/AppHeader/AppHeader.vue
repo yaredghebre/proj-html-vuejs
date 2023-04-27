@@ -49,7 +49,6 @@ export default {
     <header class="d-flex justify-content-between align-items-center p-5">
         <div class="logo">
             <img src="../../assets/images/gym_logo_1x.png" alt="">
-            <!-- <img src="gym_logo_1x.png" alt="Header Logo"> -->
         </div>
         <nav>
             <ul class="nav-links text-white d-flex gap-5">

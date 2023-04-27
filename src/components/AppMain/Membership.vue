@@ -44,7 +44,6 @@ section {
     .ms_container {
 
         .col {
-            height: 500px;
             padding: 20px;
 
             h5 {

@@ -8,8 +8,10 @@ export default {
 </script>
 
 <template>
-    <h2 class="text-white mb-4">{{ text }}</h2>
-    <img class="mb-4" src="../assets/images/divider-xx-red.png" alt="">
+    <div class="text-center">
+        <h2 class="text-white mb-4">{{ text }}</h2>
+        <img class="mb-4" src="../assets/images/divider-xx-red.png" alt="">
+    </div>
 </template>
 
 <style scoped lang="scss">

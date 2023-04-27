@@ -79,7 +79,7 @@ section {
         }
 
         &:hover h6 {
-            color: red;
+            color: $secondary_color;
         }
     }
 }
