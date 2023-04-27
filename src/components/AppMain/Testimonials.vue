@@ -8,7 +8,6 @@ export default {
     },
     data() {
         return {
-            currentIndex: 0,
             cards: [
                 {
                     image: "../src/assets/images/review_1-compressor.jpg",
