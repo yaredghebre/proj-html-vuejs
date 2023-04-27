@@ -20,6 +20,7 @@ export default {
 
 .jumbo-container {
     background-image: url(../../src/assets/images/home-banner.jpg);
+    background-size: cover;
     height: 1000px;
     position: relative;
     top: 0;

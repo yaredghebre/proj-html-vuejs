@@ -29,6 +29,7 @@ export default {
     <Features />
     <Testimonials />
     <Facilities />
+    <Quote />
 </template>
 
 <style scoped lang="scss">
