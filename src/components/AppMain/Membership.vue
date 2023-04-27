@@ -66,12 +66,12 @@ section {
                     background-color: $secondary_color;
                     border-radius: 0;
                     width: 100%;
-                    color: white;
+                    color: $grey_primary;
                     transition: color 0.2s ease-in-out;
                 }
 
                 .btn:hover {
-                    color: gold;
+                    color: white;
                 }
             }
         }

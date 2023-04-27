@@ -1,6 +1,11 @@
 <script>
+import SectionButton from '../SectionButton.vue';
+
 export default {
-    name: "Jumbotron"
+    name: "Jumbotron",
+    components: {
+        SectionButton
+    }
 }
 </script>
 
@@ -9,7 +14,7 @@ export default {
         <h1 class="">NO PAIN NO GAIN</h1>
         <p>Motivation is what gets you started. Habit is what keeps you going.</p>
         <div class="link-box mt-3">
-            <button type="button" class="btn btn-outline-light px-4 py-2">JOIN US TODAY</button>
+            <SectionButton :text="`JOIN US TODAY`"/>
         </div>
     </div>
 </template>
@@ -29,11 +34,6 @@ export default {
             font-weight: 700;
             font-size: 6.5rem;
             letter-spacing: 5px;
-        }
-
-        button {
-            font-size: 1.1rem;
-            border-radius: 0;
         }
 }
 </style>

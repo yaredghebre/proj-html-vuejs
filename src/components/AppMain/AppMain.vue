@@ -30,6 +30,8 @@ export default {
     <Testimonials />
     <Facilities />
     <Quote />
+    <Trainers />
+    <Blog />
 </template>
 
 <style scoped lang="scss">

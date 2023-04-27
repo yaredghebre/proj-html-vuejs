@@ -49,7 +49,7 @@ export default {
     <section>
         <div class="ms_container">
             <SectionTitle :text="`HIGH PERFORMANCE FACILITIES`" />
-            <div class="row row-cols-3 mt-5">
+            <div class="row row-cols-3 mt-5 justify-content-between">
                 <div v-for="thumb in thumbs" class="col ">
                     <img :src="thumb.image" alt="">
                 </div>
@@ -69,7 +69,7 @@ section {
         gap: 40px;
     
         .col {
-            width: calc(100% / 3 - 40px);
+            width: calc(100% / 3 - 30px);
         }
     }
 }

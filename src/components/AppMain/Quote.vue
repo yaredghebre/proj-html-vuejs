@@ -23,6 +23,7 @@ section {
     background-image: url(../../src/assets/images/home-testimonial-bg.jpg);
     background-position: center;
     background-size: cover;
+    
 
     .ms_container {
 
