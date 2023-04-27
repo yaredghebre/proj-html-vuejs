@@ -26,6 +26,7 @@ export default {
 <template>
     <Intro />
     <Membership />
+    <Features />
 </template>
 
 <style scoped lang="scss">

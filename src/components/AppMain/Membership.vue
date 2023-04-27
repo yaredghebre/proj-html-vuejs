@@ -12,11 +12,11 @@ export default {
                     <img src="../../assets/images/home_img-compressor.jpg" alt="Membership Image">
                 </div>
                 <div class="col">
-                    <h5 class="text-white mb-5">Sign Up For A Free Training Session!</h5>
+                    <h5 class="text-white mb-4">Sign Up For A Free Training Session!</h5>
                     <form>
                         <div class="form-group">
                             <label class="text-secondary mb-2" for="exampleInputPassword1">Name *</label>
-                            <input type="name" class="form-control ms_form mb-5" id="exampleInputName"
+                            <input type="name" class="form-control ms_form mb-3" id="exampleInputName"
                                 aria-describedby="nameHelp">
                             <small id="nameHelp" class="form-text text-muted"></small>
                         </div>
@@ -73,7 +73,6 @@ section {
 
                 .btn:hover {
                     color: gold;
-                    transition: color 0.2s ease-in-out;
                 }
             }
         }
