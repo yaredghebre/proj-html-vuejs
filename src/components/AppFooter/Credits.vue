@@ -81,7 +81,6 @@ section {
 
                 i:hover {
                     background-color: blue;
-                    transition: .5s ease-in-out;
                 }
             }
         }
