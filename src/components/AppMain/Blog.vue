@@ -64,6 +64,14 @@ export default {
                         <div class="row row-cols-2 inner-row text-white flex-column">
                             <div class="col inner-col">
                                 <img :src="card.image" alt="Immagine Blog">
+
+                                <!-- effetto hover -->
+                                <div class="overlay d-flex justify-content-center align-items-center gap-4">
+                                    <a href=""><i class="fas fa-link fa-2xl"></i></a>
+                                    <a href=""><i class="fas fa-magnifying-glass fa-2xl"></i></a>
+                                </div>
+                                <!-- / effetto hover -->
+
                             </div>
                             <div class="col inner-col p-3">
                                 <h6>{{ card.title }}</h6>
@@ -79,6 +87,14 @@ export default {
                         <div class="row row-cols-2 inner-row text-white flex-column">
                             <div class="col inner-col">
                                 <img :src="card.image" alt="Immagine Blog">
+
+                                <!-- effetto hover -->
+                                <div class="overlay d-flex justify-content-center align-items-center gap-4">
+                                    <a href=""><i class="fas fa-link fa-2xl"></i></a>
+                                    <a href=""><i class="fas fa-magnifying-glass fa-2xl"></i></a>
+                                </div>
+                                <!-- / effetto hover -->
+
                             </div>
                             <div class="col inner-col p-3">
                                 <h6>{{ card.title }}</h6>
@@ -94,6 +110,14 @@ export default {
                         <div class="row row-cols-2 inner-row text-white flex-column">
                             <div class="col inner-col">
                                 <img :src="card.image" alt="Immagine Blog">
+
+                                <!-- effetto hover -->
+                                <div class="overlay d-flex justify-content-center align-items-center gap-4">
+                                    <a href=""><i class="fas fa-link fa-2xl"></i></a>
+                                    <a href=""><i class="fas fa-magnifying-glass fa-2xl"></i></a>
+                                </div>
+                                <!-- / effetto hover -->
+
                             </div>
                             <div class="col inner-col p-3">
                                 <h6>{{ card.title }}</h6>
@@ -104,7 +128,7 @@ export default {
                 </div>
             </div>
 
-            <SectionButton :text="`READ ALL ARTICLES`"/>
+            <SectionButton :text="`READ ALL ARTICLES`" />
 
         </div>
     </section>
@@ -131,9 +155,36 @@ section {
                         background-color: $grey_secondary;
 
                         .inner-col {
+                            position: relative;
                             width: 100%;
                             font-size: .8rem;
                             padding: 0;
+
+                            .overlay {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: $secondary_color;
+                                opacity: 0;
+                                transition: 0.3s ease;
+                            }
+                        }
+
+                        .inner-col:hover .overlay {
+                            opacity: .7;
+
+                            a {
+                                transition: .2s ease-in-out;
+                            }
+
+                            a:hover {
+                                color: white;
+                                scale: 1.3;
+                            }
+
+
                         }
                     }
                 }

@@ -81,7 +81,7 @@ export default {
     <section>
         <div class="ms_container">
             <SectionTitle :text="`MEET OUR TRAINERS`" />
-            <div class="row row-cols-3 outer-row justify-content-between mb-5">
+            <div class="row row-cols-3 outer-row justify-content-between mt-5 mb-5">
                 <div v-for="card in trainers" class="col outer-col text-white">
                     <div class="row row-cols-2 inner-row text-white flex-column">
                         <div class="col inner-col">
