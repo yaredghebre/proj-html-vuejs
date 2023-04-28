@@ -72,8 +72,8 @@ section {
         }
 
         &:hover .icon-container {
-            color: red;
-            transform: scale(1.5);
+            box-shadow: 0 0 10px white;
+            // transform: scale(1.5);
         }
 
         h6 {
