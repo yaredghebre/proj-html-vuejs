@@ -62,7 +62,7 @@ export default {
         <!-- NAVBAR -->
         <nav class="d-flex justify-content-between align-items-center p-5">
             <div class="logo">
-                <img src="../../assets/images/gym_logo_1x.png" alt="">
+                <a href="#"><img src="../../assets/images/gym_logo_1x.png" alt=""></a>
             </div>
             <nav>
                 <ul class="nav-links text-white d-flex gap-5">
