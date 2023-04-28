@@ -1,11 +1,22 @@
 <script>
-    export default {
-        name: "AppFooter",
+import Banner from './Banner.vue';
+import Contacts from './Contacts.vue';
+import Credits from './Credits.vue';
+
+export default {
+    name: "AppFooter",
+    components: {
+        Banner,
+        Contacts,
+        Credits
     }
+}
 </script>
 
 <template>
-    
+    <Banner />
+    <Contacts />
+    <Credits />
 </template>
 
 <style scoped lang="scss">
