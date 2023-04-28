@@ -54,6 +54,8 @@ export default {
 
 section {
     background-image: url(../../assets/images/gym_bkgd_bw-compressor.jpg);
+    background-position-y: -100px;
+    background-size: cover;
 
     .col {
         padding: 20px;
