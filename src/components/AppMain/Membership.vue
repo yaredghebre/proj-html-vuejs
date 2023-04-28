@@ -65,7 +65,7 @@ section {
 
             img:hover {
                 scale: 1.04;
-                box-shadow: 0 0 8px $secondary_color;
+                box-shadow: 0 0 8px $red_primary;
             }
 
             h5 {
@@ -85,7 +85,7 @@ section {
                 }
 
                 .btn {
-                    background-color: $secondary_color;
+                    background-color: $red_primary;
                     border-radius: 0;
                     width: 100%;
                     color: $grey_primary;

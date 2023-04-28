@@ -42,6 +42,8 @@ export default {
             ]
         }
     },
+    
+    // FUNZIONE PER IL CLICK SUI LINK
     methods: {
         setActiveLink(index) {
             this.links.forEach((link, i) => {
@@ -83,6 +85,7 @@ export default {
                 </div>
             </div>
         </section>
+
     </header>
 </template>
 
@@ -97,8 +100,13 @@ header {
     background-size: cover;
 
     nav {
+
+        a {
+            transition: .3s ease-in-out;
+        }
+
         .active {
-            color: $secondary_color;
+            color: $red_primary;
         }
     }
 
@@ -109,6 +117,22 @@ header {
             font-weight: 700;
             font-size: 6.5rem;
             letter-spacing: 4px;
+        }
+
+        h1:hover {
+            animation: blur .3s ease-in-out alternate;
+        }
+
+        @keyframes blur {
+            0% {
+                text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px $red_primary, 0 0 25px $red_primary, 0 0 30px $red_primary;
+                color: transparent;
+            }
+
+            100% {
+                text-shadow: none;
+                color: $red_primary;
+            }
         }
     }
 }

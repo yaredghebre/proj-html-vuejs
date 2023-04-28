@@ -134,7 +134,7 @@ section {
 
                         img:hover {
                             scale: 1.04;
-                            box-shadow: 0 0 8px $secondary_color;
+                            box-shadow: 0 0 8px $red_primary;
                         }
 
                         h6 {

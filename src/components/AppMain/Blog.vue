@@ -166,9 +166,9 @@ section {
                                 left: 0;
                                 width: 100%;
                                 height: 100%;
-                                background-color: $secondary_color;
+                                background-color: $red_primary;
                                 opacity: 0;
-                                transition: 0.3s ease;
+                                transition: .3s ease-in-out;
                             }
                         }
 
@@ -181,9 +181,8 @@ section {
 
                             a:hover {
                                 color: white;
-                                scale: 1.3;
+                                scale: 1.5;
                             }
-
 
                         }
                     }

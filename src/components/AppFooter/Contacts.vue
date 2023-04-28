@@ -64,7 +64,7 @@ section {
         font-size: .8rem;
 
         a {
-            transition: 0.5s ease-in-out;
+            transition: .2s ease-in-out;
         }
 
         .ms_list-style {

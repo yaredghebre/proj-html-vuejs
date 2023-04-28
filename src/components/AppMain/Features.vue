@@ -62,8 +62,8 @@ section {
     
         .icon-container {
             display: inline;
-            border: 1px solid $secondary_color;
-            color: $secondary_color;
+            border: 1px solid $red_primary;
+            color: $red_primary;
             border-radius: 50%;
             padding: 15px;
             font-size: 2rem;
@@ -73,7 +73,19 @@ section {
 
         &:hover .icon-container {
             box-shadow: 0 0 10px white;
-            // transform: scale(1.5);
+            animation: blur .3s ease-in-out alternate;
+        }
+
+        @keyframes blur {
+            0% {
+                text-shadow: 0 0 5px white, 0 0 10px white;
+                color: transparent;
+            }
+
+            100% {
+                text-shadow: none;
+                color: $red_primary;
+            }
         }
 
         h6 {
@@ -81,7 +93,7 @@ section {
         }
 
         &:hover h6 {
-            color: $secondary_color;
+            color: $red_primary;
         }
     }
 }

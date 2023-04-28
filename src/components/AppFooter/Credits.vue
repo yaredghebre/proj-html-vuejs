@@ -2,13 +2,14 @@
 export default {
     name: "Credits",
     methods: {
+
+        // FUNZIONE CHE RIPORTA IN CIMA ALLA HOME!
         scrollToTop() {
             window.scrollTo({
                 top: 0
             })
         }
     }
-
 }
 </script>
 
@@ -56,7 +57,7 @@ export default {
 @use "../src/style/partials/variables" as *;
 
 section {
-    background-color: $primary_color;
+    background-color: $grey_primary;
 
     .ms_container {
         padding: 20px 0;
@@ -70,17 +71,19 @@ section {
                 transition: .5s ease-in-out;
             }
 
+
             .col-auto {
+                a {
+                    i {
+                        padding: 20px;
+                        border-radius: 3px;
+                        background-color: $red_primary;
+                        transition: .3s ease-in-out;
+                    }
 
-                i {
-                    padding: 20px;
-                    border-radius: 3px;
-                    background-color: $secondary_color;
-                    transition: .5s ease-in-out;
-                }
-
-                i:hover {
-                    background-color: blue;
+                    &:hover i {
+                        background-color: $grey_secondary;
+                    }
                 }
             }
         }
@@ -94,7 +97,6 @@ section {
 
             i {
                 transition: .2s ease-in-out;
-
             }
 
             i:hover {
