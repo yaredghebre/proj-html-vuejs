@@ -20,22 +20,22 @@ export default {
                 <!-- FIRST COLUMN -->
                 <div class="col-auto">
                     <ul class="d-flex gap-3">
-                        <li><a href="">@ Copyright 2012 - 2020</a></li>
+                        <li><a href="#">@ Copyright 2012 - 2020</a></li>
                         <li> | </li>
-                        <li><a href="">Avada Theme by Theme Fusion</a></li>
+                        <li><a href="#">Avada Theme by Theme Fusion</a></li>
                         <li> | </li>
-                        <li><a href="">All Rights Reserved</a></li>
+                        <li><a href="#">All Rights Reserved</a></li>
                         <li> | </li>
-                        <li><a href="">Powered by WordPress</a></li>
+                        <li><a href="#">Powered by WordPress</a></li>
                     </ul>
                 </div>
 
                 <!-- SECOND COLUMN -->
                 <div class="col-auto">
                     <ul class="d-flex gap-3">
-                        <li><a href=""><i class="fab fa-facebook-f fa-xl"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter fa-xl"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram fa-xl"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f fa-xl"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-xl"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-xl"></i></a></li>
                     </ul>
                 </div>
             </div>

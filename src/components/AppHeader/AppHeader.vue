@@ -1,10 +1,10 @@
 <script>
-import Jumbotron from './Jumbotron.vue';
+import SectionButton from '../SectionButton.vue';
 
 export default {
     name: "AppHeader",
     components: {
-        Jumbotron
+        SectionButton
     },
     data() {
         return {
@@ -41,24 +41,49 @@ export default {
                 },
             ]
         }
+    },
+    methods: {
+        setActiveLink(index) {
+            this.links.forEach((link, i) => {
+                if (i === index) {
+                    link.current = true;
+                } else {
+                    link.current = false;
+                }
+            });
+        }
     }
 }
 </script>
 
 <template>
-    <header class="d-flex justify-content-between align-items-center p-5">
-        <div class="logo">
-            <img src="../../assets/images/gym_logo_1x.png" alt="">
-        </div>
-        <nav>
-            <ul class="nav-links text-white d-flex gap-5">
-                <li v-for="link in links" :class="link.current ? 'active' : ''">
-                    <a :href="link.url">{{ link.text }}</a>
-                </li>
-            </ul>
+    <header>
+
+        <!-- NAVBAR -->
+        <nav class="d-flex justify-content-between align-items-center p-5">
+            <div class="logo">
+                <img src="../../assets/images/gym_logo_1x.png" alt="">
+            </div>
+            <nav>
+                <ul class="nav-links text-white d-flex gap-5">
+                    <li v-for="(link, index) in links" :class="link.current ? 'active' : ''">
+                        <a :href="link.url" @click="setActiveLink(index)">{{ link.text }}</a>
+                    </li>
+                </ul>
+            </nav>
         </nav>
+
+        <!-- JUMBOTRON -->
+        <section class="jumbotron">
+            <div class="jumbo-container text-white d-flex flex-column align-items-center justify-content-center">
+                <h1 class="">NO PAIN NO GAIN</h1>
+                <p>Motivation is what gets you started. Habit is what keeps you going.</p>
+                <div class="link-box mt-3">
+                    <SectionButton :text="`JOIN US TODAY`" />
+                </div>
+            </div>
+        </section>
     </header>
-    <Jumbotron />
 </template>
 
 <style scoped lang="scss">
@@ -67,13 +92,25 @@ export default {
 @use "../src/style/partials/mixins" as *;
 
 header {
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-    .active {
-        color: $secondary_color;
+    background-image: url(../../src/assets/images/home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    nav {
+        .active {
+            color: $secondary_color;
+        }
+    }
+
+    .jumbo-container {
+        height: 800px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 6.5rem;
+            letter-spacing: 4px;
+        }
     }
 }
-
 </style>
 
