@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="membership">
         <div class="ms_container">
             <div class="row row-cols-2">
 

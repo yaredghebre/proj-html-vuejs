@@ -16,27 +16,27 @@ export default {
                 },
                 {
                     text: "ABOUT US",
-                    url: "#",
+                    url: "#about-us",
                     current: false,
                 },
                 {
                     text: "FACILITIES",
-                    url: "#",
+                    url: "#facilities",
                     current: false,
                 },
                 {
                     text: "MEMBERSHIP",
-                    url: "#",
+                    url: "#membership",
                     current: false,
                 },
                 {
                     text: "TESTIMONIALS",
-                    url: "#",
+                    url: "#testimonials",
                     current: false,
                 },
                 {
                     text: "BLOG",
-                    url: "#",
+                    url: "#blog",
                     current: false,
                 },
             ]

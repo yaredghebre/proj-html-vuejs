@@ -53,7 +53,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="blog">
         <div class="ms_container">
             <SectionTitle :text="`PERFORMANCE NEWS`" />
             <div class="row row-cols-3 justify-content-around parent-row mb-5">

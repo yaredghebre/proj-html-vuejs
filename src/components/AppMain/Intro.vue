@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="about-us">
         <div class="ms_container text-center">
             <SectionTitle :text="`WORLD CLASS Fitness`" />
             <p class="text-secondary">At Avada Gym, everything we do from top to bottom is of the highest quality to ensure

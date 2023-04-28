@@ -46,7 +46,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="facilities">
         <div class="ms_container">
             <SectionTitle :text="`HIGH PERFORMANCE FACILITIES`" />
             <div class="row row-cols-3 mt-5 justify-content-between">

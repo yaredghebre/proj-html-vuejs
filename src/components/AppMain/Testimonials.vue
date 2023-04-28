@@ -36,7 +36,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="testimonials">
         <div class="ms_container">
             <SectionTitle :text="`REAL WORLD RESULTS`" />
             <div class="row row-cols-2 outer-row">
