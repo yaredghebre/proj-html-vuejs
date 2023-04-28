@@ -10,31 +10,42 @@ export default {
     },
     data() {
         return {
-            articles: [
+            articlesFirstRow: [
                 {
+                    image: "../src/assets/images/blog1.jpg",
                     title: "Train with free weigths or your body weight?",
                     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
                 },
                 {
+                    image: "../src/assets/images/blog4.jpg",
+                    title: "To be number on, train like you're number two",
+                    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
+                }
+            ],
+            articlesSecondRow: [
+                {
+                    image: "../src/assets/images/blog6.jpg",
                     title: "Nutritional advice that will keep your training",
                     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
                 },
                 {
+                    image: "../src/assets/images/trainer3.jpg",
+                    title: "Top 5 mistakes every gym member makes",
+                    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
+                }
+
+            ],
+            articlesThirdRow: [
+                {
+                    image: "../src/assets/images/trainer4.jpg",
                     title: "Simple principles for your next workout",
                     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
                 },
                 {
-                    title: "To be number on, train like you're number two",
-                    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
-                },
-                {
-                    title: "Top 5 mistakes every gym member makes",
-                    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
-                },
-                {
+                    image: "../src/assets/images/trainer1.jpg",
                     title: "The myths pf shedding body fat explored",
                     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque perferendis quam tenetur sed eos facere. Modi vel, tempora eum unde praesentium. [...]"
-                },
+                }
             ]
         }
     }
@@ -45,6 +56,56 @@ export default {
     <section>
         <div class="ms_container">
             <SectionTitle :text="`PERFORMANCE NEWS`" />
+            <div class="row row-cols-3 justify-content-around parent-row mb-5">
+
+                <!-- FIRST ROW -->
+                <div class="row row-cols-2 outer-row flex-column mt-5 gap-5">
+                    <div v-for="card in articlesFirstRow" class="col outer-col ">
+                        <div class="row row-cols-2 inner-row text-white flex-column">
+                            <div class="col inner-col">
+                                <img :src="card.image" alt="Immagine Blog">
+                            </div>
+                            <div class="col inner-col p-3">
+                                <h6>{{ card.title }}</h6>
+                                <p class="mt-1 text-secondary">{{ card.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECOND ROW -->
+                <div class="row row-cols-2 outer-row flex-column mt-5 gap-5">
+                    <div v-for="card in articlesSecondRow" class="col outer-col ">
+                        <div class="row row-cols-2 inner-row text-white flex-column">
+                            <div class="col inner-col">
+                                <img :src="card.image" alt="Immagine Blog">
+                            </div>
+                            <div class="col inner-col p-3">
+                                <h6>{{ card.title }}</h6>
+                                <p class="mt-1 text-secondary">{{ card.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THIRD ROW -->
+                <div class="row row-cols-2 outer-row flex-column mt-5 gap-5">
+                    <div v-for="card in articlesThirdRow" class="col outer-col ">
+                        <div class="row row-cols-2 inner-row text-white flex-column">
+                            <div class="col inner-col">
+                                <img :src="card.image" alt="Immagine Blog">
+                            </div>
+                            <div class="col inner-col p-3">
+                                <h6>{{ card.title }}</h6>
+                                <p class="mt-1 text-secondary">{{ card.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <SectionButton :text="`READ ALL ARTICLES`"/>
+
         </div>
     </section>
 </template>
@@ -55,6 +116,30 @@ export default {
 
 section {
     background-color: $grey_primary;
-    height: 1000px;
+
+    .ms_container {
+        position: relative;
+
+        .parent-row {
+            gap: 30px;
+
+            .outer-row {
+                .outer-col {
+                    width: 100%;
+
+                    .inner-row {
+                        background-color: $grey_secondary;
+
+                        .inner-col {
+                            width: 100%;
+                            font-size: .8rem;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 </style>
