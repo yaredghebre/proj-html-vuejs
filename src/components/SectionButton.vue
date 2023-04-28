@@ -20,5 +20,7 @@ export default {
 .ms_button {
     font-size: 1.1rem;
     border-radius: 0;
+    color: rgba(255, 255, 255, 0.800);
+    opacity: .8;
 }
 </style>
