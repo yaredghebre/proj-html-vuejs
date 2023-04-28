@@ -67,9 +67,19 @@ section {
 
     .row {
         gap: 40px;
-    
+
         .col {
             width: calc(100% / 3 - 30px);
+
+            img {
+                transition: .5s ease-in-out;
+                cursor: pointer;
+            }
+
+            img:hover {
+                scale: 1.04;
+                box-shadow: 0 0 8px $secondary_color;
+            }
         }
     }
 }

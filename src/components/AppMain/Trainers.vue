@@ -127,6 +127,20 @@ section {
                         font-size: .8rem;
                         padding: 0;
 
+                        img {
+                            transition: .5s ease-in-out;
+                            cursor: pointer;
+                        }
+
+                        img:hover {
+                            scale: 1.04;
+                            box-shadow: 0 0 8px $secondary_color;
+                        }
+
+                        h6 {
+                            cursor: pointer;
+                        }
+
                         .social-icons {
                             transition: 0.5s ease-in-out;
 
